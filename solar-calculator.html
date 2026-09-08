@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solar Calculator | Estimate Solar Capacity, Cost &amp; Savings in India</title>
+  <meta name="description" content="Calculate your personalized solar savings with Suryon Group. 30-year warranty, Made in India, Government Subsidy available across Odisha & Chhattisgarh." />
+  <link rel="canonical" href="https://suryongroup.com/solar-calculator.html" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="Suryon%20Logo.png" alt="Suryon Group" style="height: 45px; width: auto; object-fit: contain;" />
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="residential-solar.html">Residential</a></li>
+        <li class="nav-link"><a href="commercial-solar.html">Commercial</a></li>
+        <li class="nav-link"><a href="industrial-solar.html">Industrial</a></li>
+        <li class="nav-link"><a href="solar-calculator.html">Calculator</a></li>
+        <li class="nav-link"><a href="solar-services.html">Services</a></li>
+        <li class="nav-link"><a href="solar-projects.html">Projects</a></li>
+        <li class="nav-link"><a href="about-us.html">About</a></li>
+        <li class="nav-link"><a href="solar-faqs.html">FAQs</a></li>
+        <li class="nav-link"><a href="solar-insurance.html">Insurance</a></li>
+        <li class="nav-link"><a href="solar-cleaning.html">Cleaning</a></li>
+        <li class="nav-link dropdown">
+          Locations ▼
+          <div class="dropdown-menu">
+            <a href="solar-bhubaneswar.html" class="dropdown-item">Bhubaneswar</a>
+            <a href="solar-cuttack.html" class="dropdown-item">Cuttack</a>
+            <a href="solar-odisha.html" class="dropdown-item">Odisha</a>
+            <a href="solar-chhattisgarh.html" class="dropdown-item">Chhattisgarh</a>
+          </div>
+        </li>
+      </ul>
+
+      <div class="header-actions">
+        <a href="free-solar-assessment.html" class="btn btn-whatsapp">
+          Assessment
+        </a>
+        <button class="mobile-menu-btn" onclick="toggleMobileDrawer()">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawer-overlay" onclick="toggleMobileDrawer()"></div>
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 16px;">
+      <img src="Suryon%20Logo.png" alt="Suryon Group" style="height: 45px; width: auto; object-fit: contain;" />
+      <button class="modal-close" onclick="toggleMobileDrawer()">✕</button>
+    </div>
+    <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: 10px;">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="residential-solar.html" class="nav-link">Residential</a></li>
+      <li><a href="commercial-solar.html" class="nav-link">Commercial</a></li>
+      <li><a href="industrial-solar.html" class="nav-link">Industrial</a></li>
+      <li><a href="solar-calculator.html" class="nav-link">Calculator</a></li>
+      <li><a href="solar-services.html" class="nav-link">Services</a></li>
+      <li><a href="solar-projects.html" class="nav-link">Projects</a></li>
+      <li><a href="about-us.html" class="nav-link">About</a></li>
+      <li><a href="solar-faqs.html" class="nav-link">FAQs</a></li>
+      <li><a href="solar-insurance.html" class="nav-link">Insurance</a></li>
+      <li><a href="solar-cleaning.html" class="nav-link">Cleaning</a></li>
+      <li><a href="free-solar-assessment.html" class="nav-link" style="color:var(--gold-light);">Assessment</a></li>
+      <li class="nav-link" style="color: var(--gold-light); font-weight: 700;">Locations:</li>
+      <li><a href="solar-bhubaneswar.html" class="nav-link">  • Bhubaneswar</a></li>
+      <li><a href="solar-cuttack.html" class="nav-link">  • Cuttack</a></li>
+      <li><a href="solar-odisha.html" class="nav-link">  • Odisha</a></li>
+      <li><a href="solar-chhattisgarh.html" class="nav-link">  • Chhattisgarh</a></li>
+    </ul>
+    <div style="margin-top: auto;">
+      <a href="free-solar-assessment.html" class="btn btn-whatsapp" style="width:100%">
+        💬 Chat on WhatsApp (+91 98274 72441)
+      </a>
+    </div>
+  </div>
+
+  <main style="flex: 1; position: relative; z-index: 1;">
+
+    <!-- ── HERO ── -->
+    <section class="hero" style="text-align: center; padding: 72px 24px 32px; max-width: 860px; margin: 0 auto; position: relative;">
+      <div class="hero-sun"></div>
+
+      <div class="hero-eyebrow">
+        <span class="dot"></span>
+        India's Most Trusted Solar Brand • Suryon Group
+      </div>
+
+      <h1 style="font-size: clamp(36px, 6vw, 60px); font-weight: 800; line-height: 1.1; letter-spacing: -1.5px; margin-bottom: 16px;">
+        Go Solar, <span class="text-gradient">Save Big</span>
+      </h1>
+
+      <p style="font-size: 17px; color: var(--text-muted); max-width: 620px; margin: 0 auto 24px; line-height: 1.7;">
+        Calculate your personalized solar savings with Suryon Group.
+        <strong style="color:var(--text)">30-year warranty</strong> on every installation across Odisha &amp; Chhattisgarh.
+      </p>
+
+      <!-- Trust Badges -->
+      <div class="trust-badges">
+        <div class="trust-badge gold-badge">
+          <span class="tb-icon">🏅</span>
+          <span class="tb-icon-text">30 Year Warranty</span>
+        </div>
+        <div class="trust-badge india-badge">
+          <span class="tb-icon">🇮🇳</span>
+          <span class="tb-icon-text">Made in India</span>
+        </div>
+        <div class="trust-badge green-badge">
+          <span class="tb-icon">💰</span>
+          <span class="tb-icon-text">PM Surya Ghar Subsidy</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STATS ROW ── -->
+    <div class="stats-row">
+      <div class="stat">
+        <div class="stat-val">2.5<span>kW</span></div>
+        <div class="stat-lbl">Min System Size</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">80<span>%+</span></div>
+        <div class="stat-lbl">Avg. Bill Cut</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">₹78<span>k</span></div>
+        <div class="stat-lbl">Max Govt. Subsidy</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">3.2<span>-5</span></div>
+        <div class="stat-lbl">Payback (years)</div>
+      </div>
+    </div>
+
+    <!-- ── MAIN CALCULATOR WRAPPER ── -->
+    <div class="wrap-calc">
+
+      <!-- LEFT: INPUTS -->
+      <div>
+        <div class="card-calc">
+
+          <div class="card-hd">
+            <div class="card-ico">☀️</div>
+            <div>
+              <div class="card-title">Solar Savings Calculator</div>
+              <div class="card-sub">Configure your property and usage for a precise estimate</div>
+            </div>
+          </div>
+
+          <!-- CATEGORY TABS -->
+          <div class="tab-row">
+            <button class="tab-btn active" id="cat-res" onclick="setCategory('residential')">
+              <span class="t-ico">🏠</span> Residential
+            </button>
+            <button class="tab-btn" id="cat-com" onclick="setCategory('commercial')">
+              <span class="t-ico">🏢</span> Commercial &amp; Industrial
+            </button>
+          </div>
+
+          <!-- METHOD TABS -->
+          <div class="method-tabs">
+            <button class="method-btn active" id="meth-bill" onclick="setMethod('bill')">₹ Monthly Bill</button>
+            <button class="method-btn" id="meth-units" onclick="setMethod('units')">⚡ Monthly Units</button>
+            <button class="method-btn" id="meth-area" onclick="setMethod('area')">📐 Roof Area</button>
+          </div>
+
+          <div class="inputs">
+
+            <!-- BILL INPUT -->
+            <div id="inp-bill">
+              <div class="input-block">
+                <label class="lbl" for="monthly-bill">Monthly Electricity Bill</label>
+                <div class="pfx-wrap">
+                  <span class="pfx">₹</span>
+                  <input type="number" id="monthly-bill" class="inp" placeholder="e.g. 3,000" value="6500" min="0" step="100" oninput="syncSlider()" />
+                </div>
+                <div class="range-wrap">
+                  <input type="range" class="range-sl" id="bill-slider" min="500" max="50000" step="250" value="6500" oninput="syncBillFromSlider()" />
+                  <div class="range-marks">
+                    <span class="range-mark">₹500</span>
+                    <span class="range-mark">₹25,000</span>
+                    <span class="range-mark">₹50,000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- UNITS INPUT -->
+            <div id="inp-units" style="display:none;">
+              <div class="input-block">
+                <label class="lbl" for="monthly-units">Monthly Consumption (kWh / units)</label>
+                <input type="number" id="monthly-units" class="inp" placeholder="e.g. 500" min="0" step="10" />
+              </div>
+            </div>
+
+            <!-- AREA INPUT -->
+            <div id="inp-area" style="display:none;">
+              <div class="row2">
+                <div class="input-block">
+                  <label class="lbl">Total Roof Area</label>
+                  <input type="number" id="roof-area" class="inp" placeholder="e.g. 1,200" min="0" step="10" />
+                </div>
+                <div class="input-block">
+                  <label class="lbl">Unit</label>
+                  <div class="unit-toggle">
+                    <button class="unit-btn active" id="unit-sqft" onclick="setAreaUnit('sqft')">Sq. Ft.</button>
+                    <button class="unit-btn" id="unit-sqm" onclick="setAreaUnit('sqm')">Sq. Meters</button>
+                  </div>
+                </div>
+              </div>
+              <div class="input-block">
+                <label class="lbl">% of Roof Available for Solar</label>
+                <span class="roof-pct-val" id="roof-pct-display">60%</span>
+                <input type="range" class="range-sl" id="roof-pct-slider" min="10" max="100" step="5" value="60" oninput="updateRoofPct()" />
+                <div class="range-marks">
+                  <span class="range-mark">10%</span>
+                  <span class="range-mark">50%</span>
+                  <span class="range-mark">100%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="sec-div" style="margin: 4px 0 16px;"></div>
+
+            <!-- LOCATION -->
+            <div class="input-block">
+              <label class="lbl">Location (28 Indian States &amp; UTs)</label>
+              <div class="row2">
+                <select id="sel-state" class="inp" onchange="onStateChange()">
+                  <option value="">— Select State —</option>
+                </select>
+                <select id="sel-district" class="inp" onchange="onDistrictChange()" disabled>
+                  <option value="">— Select District —</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- TARIFF & SUN HOURS -->
+            <div class="row2">
+              <div class="input-block">
+                <label class="lbl" for="tariff">Electricity Rate (₹/kWh)</label>
+                <input type="number" id="tariff" class="inp" value="5.50" step="0.25" min="1" max="15" />
+              </div>
+              <div class="input-block">
+                <label class="lbl" for="sun-hrs">Peak Sun Hours / Day</label>
+                <input type="number" id="sun-hrs" class="inp" value="5.0" step="0.5" min="3" max="8" />
+              </div>
+            </div>
+
+            <!-- SYSTEM TYPE -->
+            <div class="input-block">
+              <label class="lbl" for="sys-type">System Type</label>
+              <select id="sys-type" class="inp">
+                <option value="ongrid">On-Grid (Grid-tied)</option>
+                <option value="hybrid">Hybrid (Battery Backup)</option>
+                <option value="offgrid">Off-Grid (Battery Only)</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="sec-div"></div>
+          <div class="calc-wrap">
+            <button class="calc-btn-custom" id="calc-btn" onclick="calculate()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+              Calculate My Solar Savings
+            </button>
+          </div>
+
+        </div><!-- /card-calc -->
+      </div><!-- /left -->
+
+      <!-- RIGHT PANEL -->
+      <div class="r-panel" id="r-panel">
+
+        <!-- RESULTS CARD -->
+        <div class="card-calc" id="res-card">
+
+          <!-- Empty State -->
+          <div id="empty-state">
+            <div class="empty-state">
+              <div class="empty-ico">🌱</div>
+              <p class="empty-txt">Enter your details on the left and tap <strong style="color:var(--text)">Calculate My Solar Savings</strong> to get your personalized estimate.</p>
+            </div>
+          </div>
+
+          <!-- Results -->
+          <div class="results-wrap" id="results">
+
+            <!-- System size -->
+            <div style="padding:16px 20px 0;">
+              <div class="sys-pill">
+                <div>
+                  <div class="sys-pill-lbl">Recommended System Size</div>
+                </div>
+                <div class="sys-pill-val" id="r-syssize">— <span>kW</span></div>
+              </div>
+            </div>
+
+            <!-- Savings header -->
+            <div class="sav-hd" style="margin-top:14px;">
+              <span class="sav-hd-ico">💰</span>
+              <div>
+                <div class="sav-hd-txt">Savings Forecast</div>
+                <div class="sav-hd-sub" id="r-tariff-label">Electricity Bill Savings (at ₹5.5/kWh)</div>
+              </div>
+            </div>
+
+            <div class="sav-grid">
+              <div class="sav-col">
+                <div class="sav-period">Monthly</div>
+                <div class="sav-amount" id="r-monthly">—</div>
+                <div class="sav-label">per month</div>
+              </div>
+              <div class="sav-col">
+                <div class="sav-period">Annual</div>
+                <div class="sav-amount" id="r-annual">—</div>
+                <div class="sav-label">per year</div>
+              </div>
+              <div class="sav-col">
+                <div class="sav-period">30-Year</div>
+                <div class="sav-amount big" id="r-30yr">—</div>
+                <div class="sav-label">lifetime savings</div>
+              </div>
+            </div>
+
+            <div class="sec-div"></div>
+
+            <!-- Cost breakdown -->
+            <div class="cost-hd">System Cost &amp; Subsidy</div>
+            <div class="cost-sub">Project Cost Breakdown</div>
+            <div>
+              <div class="cost-row">
+                <span class="cost-key">System Cost (DCR Panels)</span>
+                <span class="cost-val" id="r-syscost">—</span>
+              </div>
+              <div class="cost-row" id="subsidy-row">
+                <span class="cost-key">
+                  PM Surya Ghar Govt. Subsidy
+                  <span class="cost-badge" id="subsidy-badge">max 3 kW</span>
+                </span>
+                <span class="cost-val savings-val" id="r-subsidy">—</span>
+              </div>
+              <div class="cost-row total-row">
+                <span class="cost-key" style="font-weight:700;color:var(--text);">Your Net Investment</span>
+                <span class="cost-val total-val" id="r-netcost">—</span>
+              </div>
+            </div>
+
+            <!-- Gauge -->
+            <div class="gauge-sec">
+              <div class="gauge-lbl-row">
+                <span class="gauge-lbl">Bill Coverage by Solar</span>
+                <span class="gauge-pct" id="r-coverage-pct">—%</span>
+              </div>
+              <div class="gauge-track">
+                <div class="gauge-fill" id="gauge-fill"></div>
+              </div>
+            </div>
+
+            <div style="padding: 16px;">
+              <button class="btn btn-whatsapp" style="width: 100%; font-size: 14px; padding: 14px;" onclick="connectWhatsAppCalcLead()">
+                💬 Connect with Solar Team on WhatsApp →
+              </button>
+            </div>
+
+          </div><!-- /results -->
+        </div><!-- /res-card -->
+
+        <!-- KPI ROW -->
+        <div class="kpi-row results-wrap" id="kpi-wrap">
+          <div class="kpi-card">
+            <div class="kpi-emoji">📅</div>
+            <div class="kpi-val"><span id="r-payback">—</span> <em>Yrs</em></div>
+            <div class="kpi-lbl">Simple Payback Period</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-emoji">📈</div>
+            <div class="kpi-val"><span id="r-roi">—</span><em>%</em></div>
+            <div class="kpi-lbl">Annual Return on Investment</div>
+          </div>
+        </div>
+
+        <!-- ENVIRONMENT CARD -->
+        <div class="card-calc results-wrap" id="env-wrap">
+          <div class="env-hd">🌿 Environmental Impact</div>
+          <div class="env-grid">
+            <div class="env-item">
+              <div class="env-emoji">🌿</div>
+              <div class="env-val" id="r-co2">—</div>
+              <div class="env-unit">Tonnes CO₂</div>
+              <div class="env-lbl">CO₂ Emissions Mitigated<br>(30 years)</div>
+            </div>
+            <div class="env-item">
+              <div class="env-emoji">🌳</div>
+              <div class="env-val" id="r-trees">—</div>
+              <div class="env-unit">Trees</div>
+              <div class="env-lbl">Trees Planted<br>Equivalent</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TIPS -->
+        <div class="tips-card">
+          <div class="tips-hd">💡 Solar Readiness Checklist</div>
+          <div class="tips-list">
+            <div class="tip"><span class="tip-ico">🏗️</span><div class="tip-txt"><strong>Rooftop Space</strong>1 kW needs ~90 sq. ft. of shadow-free area</div></div>
+            <div class="tip"><span class="tip-ico">☀️</span><div class="tip-txt"><strong>Sunlight</strong>Min 4–6 hrs direct sun daily for optimal output</div></div>
+            <div class="tip"><span class="tip-ico">📄</span><div class="tip-txt"><strong>Net Metering</strong>Sell surplus power back to grid (TPCODL/CSPDCL)</div></div>
+            <div class="tip"><span class="tip-ico">💰</span><div class="tip-txt"><strong>PM Surya Ghar</strong>Max ₹78,000 subsidy reached at 3 kW+ (Best Value)</div></div>
+            <div class="tip"><span class="tip-ico">🏦</span><div class="tip-txt"><strong>Financing</strong>Solar loans at 7–9% interest from all major banks</div></div>
+          </div>
+        </div>
+
+      </div><!-- /r-panel -->
+    </div><!-- /wrap-calc -->
+
+  </main>
+
+  <!-- Lead Modal -->
+  <div class="modal-overlay" id="lead-modal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeLeadModal()">✕</button>
+      <h3 style="font-size: 22px; color: var(--gold-light);" id="modal-title-text">☀️ Get Free Solar Assessment</h3>
+      <p style="font-size: 13px; color: var(--green-light); margin-bottom: 20px;">Suryon Group (+91 98274 72441)</p>
+      <form onsubmit="handleModalSubmit(event)">
+        <input type="hidden" id="modal-context" value="Solar Calculator" />
+        <div style="margin-bottom: 12px;">
+          <label style="font-size: 12px; color: var(--text-muted);">Name *</label>
+          <input type="text" class="inp" id="modal-name" required placeholder="Your Name" />
+        </div>
+        <div style="margin-bottom: 12px;">
+          <label style="font-size: 12px; color: var(--text-muted);">Mobile / WhatsApp Number *</label>
+          <input type="tel" class="inp" id="modal-phone" required placeholder="98274XXXXX" />
+        </div>
+        <div style="margin-bottom: 12px;">
+          <label style="font-size: 12px; color: var(--text-muted);">City / Location *</label>
+          <input type="text" class="inp" id="modal-city" required placeholder="Bhubaneswar / Raipur" />
+        </div>
+        <button type="submit" class="btn btn-whatsapp" style="width: 100%; margin-top: 10px;">💬 Connect on WhatsApp →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floater -->
+  <div class="whatsapp-floater" onclick="openLeadModal('Floating Action', 'Free Assessment')">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    <span>Chat on WhatsApp</span>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"><span>Connecting to WhatsApp...</span></div>
+
+  <!-- Sticky Mobile Bar -->
+  <div class="mobile-sticky-bar">
+    <button class="btn btn-whatsapp" style="width:100%; font-size:14px; padding:12px;" onclick="openWhatsApp('Hi Suryon Group! I want to chat with a solar expert about my property on WhatsApp (+91 98274 72441).')">
+      💬 Chat With Solar Expert → WhatsApp
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="Suryon%20Logo.png" alt="Suryon Group" style="height: 55px; width: auto; object-fit: contain; margin-bottom: 15px;" />
+          <p style="font-size:13px; color:var(--text-muted); margin-top:10px;">Solar EPC, Rooftop Solar Installation, Subsidy &amp; Maintenance in Bhubaneswar, Odisha &amp; Chhattisgarh.</p>
+        </div>
+        <div>
+          <div style="font-weight:700; color:var(--white); margin-bottom:10px;">Solar Pages</div>
+          <a href="index.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">Home</a>
+          <a href="residential-solar.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">Residential Solar</a>
+          <a href="commercial-solar.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">Commercial Solar</a>
+          <a href="industrial-solar.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">Industrial Solar</a>
+          <a href="solar-calculator.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">Solar Calculator</a>
+          <a href="solar-services.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">Solar Services</a>
+          <a href="solar-insurance.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">Solar Insurance</a>
+          <a href="solar-cleaning.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">Solar Cleaning</a>
+        </div>
+        <div>
+          <div style="font-weight:700; color:var(--white); margin-bottom:10px;">Company & Locations</div>
+          <a href="solar-projects.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">Projects</a>
+          <a href="about-us.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">About Us</a>
+          <a href="solar-faqs.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">Solar FAQs</a>
+          <a href="free-solar-assessment.html" style="display:block; font-size:13px; color:var(--gold-light); margin-bottom:4px;">Free Assessment</a>
+          <a href="solar-bhubaneswar.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">Bhubaneswar</a>
+          <a href="solar-cuttack.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">Cuttack</a>
+          <a href="solar-odisha.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">Odisha</a>
+          <a href="solar-chhattisgarh.html" style="display:block; font-size:13px; color:var(--text-muted); margin-bottom:4px;">Chhattisgarh</a>
+        </div>
+        <div>
+          <div style="font-weight:700; color:var(--white); margin-bottom:10px;">Contact</div>
+          <p style="font-size:13px; color:var(--text-muted);">Suryon Group Hotline<br/>+91 98274 72441</p>
+          <button class="btn btn-whatsapp" style="margin-top:10px; padding:10px 16px; font-size:13px;" onclick="openLeadModal('Footer Contact', 'Contact Support')">💬 Message WhatsApp</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Suryon Group. All Rights Reserved.</div>
+        <div>Hotline: +91 98274 72441</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const WA_NUMBER = "919827472441";
+
+    function toggleMobileDrawer() {
+      document.getElementById('mobile-drawer').classList.toggle('open');
+      document.getElementById('drawer-overlay').classList.toggle('open');
+    }
+
+    function openLeadModal(title, subtitle) {
+      document.getElementById('modal-title-text').textContent = title || 'Get Free Assessment';
+      document.getElementById('lead-modal').classList.add('open');
+    }
+
+    function closeLeadModal() {
+      document.getElementById('lead-modal').classList.remove('open');
+    }
+
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('modal-name').value;
+      const phone = document.getElementById('modal-phone').value;
+      const city = document.getElementById('modal-city').value;
+      const msg = `Hi *Suryon Group*! ☀️\nI request a Free Solar Assessment.\n- *Name:* ${name}\n- *Phone:* ${phone}\n- *City:* ${city}\n\n👉 Contact me for solar installation (+91 98274 72441)`;
+      closeLeadModal();
+      openWhatsApp(msg);
+    }
+
+    function openWhatsApp(msg) {
+      showToast('Connecting to WhatsApp (+91 98274 72441)...');
+      const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+      setTimeout(() => window.open(url, '_blank'), 400);
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.children[0].textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 3500);
+    }
+
+    /* ══════════════ DATA: ALL INDIAN STATES & DISTRICTS ══════════════ */
+    const STATE_DATA = {
+      'Andhra Pradesh': {
+        tariff: 5.50, sun: 5.5,
+        districts: ['Anakapalli','Ananthapuramu','Annamayya','Bapatla','Chittoor','East Godavari','Eluru','Guntur','Kakinada','Konaseema','Krishna','Kurnool','Nandyal','NTR','Palnadu','Parvathipuram Manyam','Prakasam','Sri Potti Sriramulu Nellore','Sri Sathya Sai','Srikakulam','Tirupati','Visakhapatnam','Vizianagaram','West Godavari','YSR Kadapa']
+      },
+      'Arunachal Pradesh': {
+        tariff: 4.50, sun: 4.2,
+        districts: ['Anjaw','Changlang','Dibang Valley','East Kameng','East Siang','Itanagar Capital Complex','Kamle','Kra Daadi','Kurung Kumey','Lepa Rada','Lohit','Longding','Lower Dibang Valley','Lower Subansiri','Namsai','Pakke Kessang','Papum Pare','Shi Yomi','Siang','Tawang','Tirap','Upper Siang','Upper Subansiri','West Kameng','West Siang']
+      },
+      'Assam': {
+        tariff: 5.60, sun: 4.5,
+        districts: ['Baksa','Barpeta','Biswanath','Bongaigaon','Cachar','Charaideo','Chirang','Darrang','Dhemaji','Dhubri','Dibrugarh','Dima Hasao','Goalpara','Golaghat','Hailakandi','Hojai','Jorhat','Kamrup','Kamrup Metropolitan','Karbi Anglong','Karimganj','Kokrajhar','Lakhimpur','Majuli','Morigaon','Nagaon','Nalbari','Sivasagar','Sonitpur','South Salmara-Mankachar','Tinsukia','Udalguri','West Karbi Anglong']
+      },
+      'Bihar': {
+        tariff: 6.00, sun: 5.1,
+        districts: ['Araria','Arwal','Aurangabad','Banka','Begusarai','Bhagalpur','Bhojpur','Buxar','Darbhanga','East Champaran','Gaya','Gopalganj','Jamui','Jehanabad','Kaimur','Katihar','Khagaria','Kishanganj','Lakhisarai','Madhepura','Madhubani','Munger','Muzaffarpur','Nalanda','Nawada','Patna','Purnia','Rohtas','Saharsa','Samastipur','Saran','Sheikhpura','Sheohar','Sitamarhi','Siwan','Supaul','Vaishali','West Champaran']
+      },
+      'Chhattisgarh': {
+        tariff: 5.00, sun: 5.2,
+        districts: ['Balod','Baloda Bazar','Balrampur','Bastar','Bemetara','Bijapur','Bilaspur','Dantewada','Dhamtari','Durg','Gariaband','Gaurela-Pendra-Marwahi','Janjgir-Champa','Jashpur','Kabirdham','Kanker','Khairagarh-Chhuikhadan-Gandai','Kondagaon','Korba','Koriya','Mahasamund','Manendragarh-Chirmiri-Bharatpur','Mohla-Manpur-Ambagarh Chowki','Mungeli','Narayanpur','Raigarh','Raipur','Rajnandgaon','Sarangarh-Bilaigarh','Sukma','Surajpur','Surguja']
+      },
+      'Goa': {
+        tariff: 4.50, sun: 4.8,
+        districts: ['North Goa','South Goa']
+      },
+      'Gujarat': {
+        tariff: 4.50, sun: 5.8,
+        districts: ['Ahmedabad','Amreli','Anand','Aravalli','Banaskantha','Bharuch','Bhavnagar','Botad','Chhota Udaipur','Dahod','Dang','Devbhumi Dwarka','Gandhinagar','Gir Somnath','Jamnagar','Junagadh','Kheda','Kutch','Mahisagar','Mehsana','Morbi','Narmada','Navsari','Panchmahal','Patan','Porbandar','Rajkot','Sabarkantha','Surat','Surendranagar','Tapi','Vadodara','Valsad']
+      },
+      'Haryana': {
+        tariff: 6.00, sun: 5.1,
+        districts: ['Ambala','Bhiwani','Charkhi Dadri','Faridabad','Fatehabad','Gurugram','Hisar','Jhajjar','Jind','Kaithal','Karnal','Kurukshetra','Mahendragarh','Nuh','Palwal','Panchkula','Panipat','Rewari','Rohtak','Sirsa','Sonipat','Yamunanagar']
+      },
+      'Himachal Pradesh': {
+        tariff: 4.50, sun: 4.8,
+        districts: ['Bilaspur','Chamba','Hamirpur','Kangra','Kinnaur','Kullu','Lahaul and Spiti','Mandi','Shimla','Sirmaur','Solan','Una']
+      },
+      'Jharkhand': {
+        tariff: 5.50, sun: 5.0,
+        districts: ['Bokaro','Chatra','Deoghar','Dhanbad','Dumka','East Singhbhum','Garhwa','Giridih','Godda','Gumla','Hazaribagh','Jamtara','Khunti','Koderma','Latehar','Lohardaga','Pakur','Palamu','Ramgarh','Ranchi','Sahibganj','Seraikela Kharsawan','Simdega','West Singhbhum']
+      },
+      'Karnataka': {
+        tariff: 6.50, sun: 5.3,
+        districts: ['Bagalkote','Ballari','Belagavi','Bengaluru Rural','Bengaluru Urban','Bidar','Chamarajanagara','Chikkaballapura','Chikkamagaluru','Chitradurga','Dakshina Kannada','Davanagere','Dharwad','Gadag','Hassan','Haveri','Kalaburagi','Kodagu','Kolar','Koppal','Mandya','Mysuru','Raichur','Ramanagara','Shivamogga','Tumakuru','Udupi','Uttara Kannada','Vijayanagara','Vijayapura','Yadgir']
+      },
+      'Kerala': {
+        tariff: 5.50, sun: 4.5,
+        districts: ['Alappuzha','Ernakulam','Idukki','Kannur','Kasaragod','Kollam','Kottayam','Kozhikode','Malappuram','Palakkad','Pathanamthitta','Thiruvananthapuram','Thrissur','Wayanad']
+      },
+      'Madhya Pradesh': {
+        tariff: 5.50, sun: 5.5,
+        districts: ['Agar Malwa','Alirajpur','Anuppur','Ashoknagar','Balaghat','Barwani','Betul','Bhind','Bhopal','Burhanpur','Chhatarpur','Chhindwara','Damoh','Datia','Dewas','Dhar','Dindori','Guna','Gwalior','Harda','Indore','Jabalpur','Jhabua','Katni','Khandwa','Khargone','Maihar','Mandla','Mandsaur','Mauganj','Morena','Narmadapuram','Narsinghpur','Neemuch','Niwari','Pandhurna','Panna','Raisen','Rajgarh','Ratlam','Rewa','Sagar','Satna','Sehore','Seoni','Shahdol','Shajapur','Sheopur','Shivpuri','Sidhi','Singrauli','Tikamgarh','Ujjain','Umaria','Vidisha']
+      },
+      'Maharashtra': {
+        tariff: 7.00, sun: 5.5,
+        districts: ['Ahilyanagar','Akola','Amravati','Beed','Bhandara','Buldhana','Chandrapur','Chhatrapati Sambhajinagar','Dharashiv','Dhule','Gadchiroli','Gondia','Hingoli','Jalgaon','Jalna','Kolhapur','Latur','Mumbai City','Mumbai Suburban','Nagpur','Nanded','Nandurbar','Nashik','Palghar','Parbhani','Pune','Raigad','Ratnagiri','Sangli','Satara','Sindhudurg','Solapur','Thane','Wardha','Washim','Yavatmal']
+      },
+      'Manipur': {
+        tariff: 4.80, sun: 4.3,
+        districts: ['Bishnupur','Chandel','Churachandpur','Imphal East','Imphal West','Jiribam','Kakching','Kamjong','Kangpokpi','Noney','Pherzawl','Senapati','Tamenglong','Tengnoupal','Thoubal','Ukhrul']
+      },
+      'Meghalaya': {
+        tariff: 4.70, sun: 4.1,
+        districts: ['East Garo Hills','East Jaintia Hills','East Khasi Hills','Eastern West Khasi Hills','North Garo Hills','Ri Bhoi','South Garo Hills','South West Garo Hills','South West Khasi Hills','West Garo Hills','West Jaintia Hills','West Khasi Hills']
+      },
+      'Mizoram': {
+        tariff: 4.80, sun: 4.2,
+        districts: ['Aizawl','Champhai','Hnahthial','Khawzawl','Kolasib','Lawngtlai','Lunglei','Mamit','Saitual','Serchhip','Siaha']
+      },
+      'Nagaland': {
+        tariff: 4.70, sun: 4.2,
+        districts: ['Chumoukedima','Dimapur','Kiphire','Kohima','Longleng','Mokokchung','Mon','Niuland','Noklak','Peren','Phek','Shamator','Tseminyu','Tuensang','Wokha','Zunheboto']
+      },
+      'Odisha': {
+        tariff: 5.50, sun: 5.0,
+        districts: ['Angul','Balangir','Balasore','Bargarh','Bhadrak','Boudh','Cuttack','Deogarh','Dhenkanal','Gajapati','Ganjam','Jagatsinghpur','Jajpur','Jharsuguda','Kalahandi','Kandhamal','Kendrapara','Kendujhar','Khordha','Koraput','Malkangiri','Mayurbhanj','Nabarangpur','Nayagarh','Nuapada','Puri','Rayagada','Sambalpur','Subarnapur','Sundargarh']
+      },
+      'Punjab': {
+        tariff: 5.50, sun: 5.0,
+        districts: ['Amritsar','Barnala','Bathinda','Faridkot','Fatehgarh Sahib','Fazilka','Firozpur','Gurdaspur','Hoshiarpur','Jalandhar','Kapurthala','Ludhiana','Malerkotla','Mansa','Moga','Pathankot','Patiala','Rupnagar','Sahibzada Ajit Singh Nagar','Sangrur','Shahid Bhagat Singh Nagar','Sri Muktsar Sahib','Tarn Taran']
+      },
+      'Rajasthan': {
+        tariff: 5.50, sun: 6.0,
+        districts: ['Ajmer','Alwar','Anupgarh','Balotra','Banswara','Baran','Barmer','Beawar','Bharatpur','Bhilwara','Bikaner','Bundi','Chittorgarh','Churu','Dausa','Deeg','Dholpur','Didwana-Kuchaman','Dungarpur','Gangapur City','Hanumangarh','Jaipur','Jaipur Rural','Jaisalmer','Jalore','Jhalawar','Jhunjhunu','Jodhpur','Jodhpur Rural','Karauli','Kekri','Khairthal-Tijara','Kota','Kotputli-Behror','Nagaur','Neem Ka Thana','Pali','Phalodi','Pratapgarh','Rajsamand','Salumbar','Sanchore','Sawai Madhopur','Shahpura','Sikar','Sirohi','Sri Ganganagar','Tonk','Udaipur']
+      },
+      'Sikkim': {
+        tariff: 4.20, sun: 4.1,
+        districts: ['East Sikkim','Gangtok','Gyalshing','Mangan','Namchi','Pakyong','Soreng']
+      },
+      'Tamil Nadu': {
+        tariff: 5.50, sun: 5.1,
+        districts: ['Ariyalur','Chengalpattu','Chennai','Coimbatore','Cuddalore','Dharmapuri','Dindigul','Erode','Kallakurichi','Kanchipuram','Kanyakumari','Karur','Krishnagiri','Madurai','Mayiladuthurai','Nagapattinam','Namakkal','Nilgiris','Perambalur','Pudukkottai','Ramanathapuram','Ranipet','Salem','Sivaganga','Tenkasi','Thanjavur','Theni','Thoothukudi','Tiruchirappalli','Tirunelveli','Tirupathur','Tiruppur','Tiruvallur','Tiruvannamalai','Tiruvarur','Vellore','Viluppuram','Virudhunagar']
+      },
+      'Telangana': {
+        tariff: 5.50, sun: 5.5,
+        districts: ['Adilabad','Bhadradri Kothagudem','Hanamkonda','Hyderabad','Jagtial','Jangaon','Jayashankar Bhupalpally','Jogulamba Gadwal','Kamareddy','Karimnagar','Khammam','Kumuram Bheem Asifabad','Mahabubabad','Mahbuknagar','Mancherial','Medak','Medchal-Malkajgiri','Mulugu','Nagarkurnool','Nalgonda','Narayanpet','Nirmal','Nizamabad','Peddapalli','Rajanna Sircilla','Ranga Reddy','Sangareddy','Siddipet','Suryapet','Vikarabad','Wanaparthy','Warangal','Yadadri Bhuvanagiri']
+      },
+      'Tripura': {
+        tariff: 4.90, sun: 4.4,
+        districts: ['Dhalai','Gomati','Khowai','North Tripura','Sepahijala','South Tripura','Unakoti','West Tripura']
+      },
+      'Uttar Pradesh': {
+        tariff: 5.50, sun: 5.0,
+        districts: ['Agra','Aligarh','Ambedkar Nagar','Amethi','Amroha','Auraiya','Ayodhya','Azamgarh','Baghpat','Bahraich','Ballia','Balrampur','Banda','Barabanki','Bareilly','Basti','Bhadohi','Bijnor','Budaun','Bulandshahr','Chandauli','Chitrakoot','Deoria','Etah','Etawah','Farrukhabad','Fatehpur','Firozabad','Gautam Buddha Nagar','Ghaziabad','Ghazipur','Gonda','Gorakhpur','Hamirpur','Hapur','Hardoi','Hathras','Jalaun','Jaunpur','Jhansi','Kannauj','Kanpur Dehat','Kanpur Nagar','Kasganj','Kaushambi','Kushinagar','Lakhimpur Kheri','Lalitpur','Lucknow','Maharajganj','Mahoba','Mainpuri','Mathura','Mau','Meerut','Mirzapur','Moradabad','Muzaffarnagar','Pilibhit','Pratapgarh','Prayagraj','Raebareli','Rampur','Saharanpur','Sambhal','Sant Kabir Nagar','Shahjahanpur','Shamli','Shravasti','Siddharthnagar','Sitapur','Sonbhadra','Sultanpur','Unnao','Varanasi']
+      },
+      'Uttarakhand': {
+        tariff: 4.60, sun: 4.6,
+        districts: ['Almora','Bageshwar','Chamoli','Champawat','Dehradun','Haridwar','Nainital','Pauri Garhwal','Pithoragarh','Rudraprayag','Tehri Garhwal','Udham Singh Nagar','Uttarkashi']
+      },
+      'West Bengal': {
+        tariff: 7.00, sun: 4.8,
+        districts: ['Alipurduar','Bankura','Birbhum','Cooch Behar','Dakshin Dinajpur','Darjeeling','Hooghly','Howrah','Jalpaiguri','Jhargram','Kalimpong','Kolkata','Malda','Murshidabad','Nadia','North 24 Parganas','Paschim Bardhaman','Paschim Medinipur','Purba Bardhaman','Purba Medinipur','Purulia','South 24 Parganas','Uttar Dinajpur']
+      },
+      'Andaman and Nicobar Islands': {
+        tariff: 5.00, sun: 4.8,
+        districts: ['Nicobar','North and Middle Andaman','South Andaman']
+      },
+      'Chandigarh': {
+        tariff: 5.20, sun: 5.0,
+        districts: ['Chandigarh']
+      },
+      'Dadra and Nagar Haveli and Daman and Diu': {
+        tariff: 4.50, sun: 5.5,
+        districts: ['Dadra and Nagar Haveli','Daman','Diu']
+      },
+      'Delhi': {
+        tariff: 5.50, sun: 5.0,
+        districts: ['Central Delhi','East Delhi','New Delhi','North Delhi','North East Delhi','North West Delhi','Shahdara','South Delhi','South East Delhi','South West Delhi','West Delhi']
+      },
+      'Jammu & Kashmir': {
+        tariff: 4.50, sun: 5.1,
+        districts: ['Anantnag','Bandipora','Baramulla','Budgam','Doda','Ganderbal','Jammu','Kathua','Kishtwar','Kulgam','Kupwara','Poonch','Pulwama','Rajouri','Ramban','Reasi','Samba','Shopian','Srinagar','Udhampur']
+      },
+      'Ladakh': {
+        tariff: 4.20, sun: 6.5,
+        districts: ['Kargil','Leh']
+      },
+      'Lakshadweep': {
+        tariff: 5.00, sun: 5.0,
+        districts: ['Lakshadweep']
+      },
+      'Puducherry': {
+        tariff: 4.80, sun: 5.2,
+        districts: ['Karaikal','Mahe','Puducherry','Yanam']
+      }
+    };
+
+    const DISTRICT_OVERRIDES = {
+      'Khordha': { tariff: 5.50, sun: 5.1 },
+      'Cuttack': { tariff: 5.50, sun: 5.0 },
+      'Raipur': { tariff: 5.10, sun: 5.3 },
+      'Durg': { tariff: 5.00, sun: 5.2 },
+      'Mumbai City': { tariff: 7.20, sun: 5.3 },
+      'Mumbai Suburban': { tariff: 7.20, sun: 5.3 },
+      'Pune': { tariff: 7.10, sun: 5.5 },
+      'Bengaluru Urban': { tariff: 6.80, sun: 5.3 },
+      'Gurugram': { tariff: 6.20, sun: 5.1 },
+      'Gautam Buddha Nagar': { tariff: 6.20, sun: 5.1 },
+      'Kolkata': { tariff: 7.20, sun: 4.8 }
+    };
+
+    let category = 'residential';
+    let method = 'bill';
+    let areaUnit = 'sqft';
+    let lastCalcData = null;
+
+    (function() {
+      const sel = document.getElementById('sel-state');
+      Object.keys(STATE_DATA).sort().forEach(s => {
+        const o = document.createElement('option');
+        o.value = s; o.textContent = s;
+        if (s === 'Odisha') o.selected = true;
+        sel.appendChild(o);
+      });
+      onStateChange();
+    })();
+
+    function setCategory(c) {
+      category = c;
+      document.getElementById('cat-res').classList.toggle('active', c==='residential');
+      document.getElementById('cat-com').classList.toggle('active', c==='commercial');
+      document.getElementById('subsidy-row').style.display = c==='residential' ? '' : 'none';
+    }
+
+    function setMethod(m) {
+      method = m;
+      ['bill','units','area'].forEach(x => {
+        document.getElementById('inp-' + x).style.display = x===m ? '' : 'none';
+        document.getElementById('meth-' + x).classList.toggle('active', x===m);
+      });
+    }
+
+    function setAreaUnit(u) {
+      areaUnit = u;
+      document.getElementById('unit-sqft').classList.toggle('active', u==='sqft');
+      document.getElementById('unit-sqm').classList.toggle('active', u==='sqm');
+    }
+
+    function updateRoofPct() {
+      document.getElementById('roof-pct-display').textContent = document.getElementById('roof-pct-slider').value + '%';
+    }
+
+    function syncSlider() {
+      const v = parseFloat(document.getElementById('monthly-bill').value) || 0;
+      document.getElementById('bill-slider').value = Math.min(50000, Math.max(500, v));
+    }
+
+    function syncBillFromSlider() {
+      document.getElementById('monthly-bill').value = document.getElementById('bill-slider').value;
+    }
+
+    function onStateChange() {
+      const state = document.getElementById('sel-state').value;
+      const distEl = document.getElementById('sel-district');
+      distEl.innerHTML = '<option value="">— Select District —</option>';
+      distEl.disabled = !state;
+
+      if (state && STATE_DATA[state]) {
+        const data = STATE_DATA[state];
+        data.districts.sort().forEach(d => {
+          const o = document.createElement('option');
+          o.value = d; o.textContent = d;
+          if (d === 'Khordha') o.selected = true;
+          distEl.appendChild(o);
+        });
+
+        document.getElementById('tariff').value = data.tariff.toFixed(2);
+        document.getElementById('sun-hrs').value = data.sun.toFixed(1);
+      }
+    }
+
+    function onDistrictChange() {
+      const state = document.getElementById('sel-state').value;
+      const distName = document.getElementById('sel-district').value;
+      if (state && distName && STATE_DATA[state]) {
+        const stateObj = STATE_DATA[state];
+        let tariff = stateObj.tariff;
+        let sun = stateObj.sun;
+
+        if (DISTRICT_OVERRIDES[distName]) {
+          tariff = DISTRICT_OVERRIDES[distName].tariff;
+          sun = DISTRICT_OVERRIDES[distName].sun;
+        }
+
+        document.getElementById('tariff').value = tariff.toFixed(2);
+        document.getElementById('sun-hrs').value = sun.toFixed(1);
+      }
+    }
+
+    function fmtINR(n) {
+      if (n >= 100000) return '₹' + (n/100000).toFixed(2) + ' L';
+      if (n >= 1000) return '₹' + Math.round(n).toLocaleString('en-IN');
+      return '₹' + Math.round(n);
+    }
+    function fmtDec(n, d=1) { return parseFloat(n.toFixed(d)); }
+
+    function calculate() {
+      const btn = document.getElementById('calc-btn');
+      btn.innerHTML = '<span style="display:inline-block;animation:spin 1s linear infinite">⚡</span> Calculating…';
+      btn.disabled = true;
+      setTimeout(() => {
+        try { doCalc(); }
+        catch(e) { showToast('⚠️ ' + e.message); }
+        btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> Calculate My Solar Savings`;
+        btn.disabled = false;
+      }, 450);
+    }
+
+    function doCalc() {
+      const tariff = parseFloat(document.getElementById('tariff').value) || 5.5;
+      const sunHrs = parseFloat(document.getElementById('sun-hrs').value) || 5.0;
+      const sysType = document.getElementById('sys-type').value;
+      const PR = 0.78;
+
+      let monthlyUnits = 0;
+      if (method === 'bill') {
+        const bill = parseFloat(document.getElementById('monthly-bill').value) || 0;
+        if (!bill) throw new Error('Please enter your monthly electricity bill.');
+        monthlyUnits = bill / tariff;
+      } else if (method === 'units') {
+        monthlyUnits = parseFloat(document.getElementById('monthly-units').value) || 0;
+        if (!monthlyUnits) throw new Error('Please enter your monthly consumption in kWh.');
+      } else {
+        const rawArea = parseFloat(document.getElementById('roof-area').value) || 0;
+        if (!rawArea) throw new Error('Please enter your roof area.');
+        const pct = parseFloat(document.getElementById('roof-pct-slider').value) / 100;
+        const sqft = areaUnit === 'sqm' ? rawArea * 10.764 : rawArea;
+        const sysKW = (sqft * pct) / 90;
+        monthlyUnits = sysKW * sunHrs * 30 * PR;
+      }
+
+      const eff = sysType === 'offgrid' ? 1.35 : (sysType === 'hybrid' ? 1.28 : 1.25);
+      const sysKW = (monthlyUnits / 30 / (sunHrs * PR)) * eff;
+      const monthlyGen = sysKW * sunHrs * 30 * PR;
+      const covered = Math.min(monthlyGen, monthlyUnits);
+      const monthlySav = covered * tariff;
+      const annualSav = monthlySav * 12;
+
+      let sav30 = 0, cur = annualSav;
+      for (let y = 1; y <= 30; y++) { sav30 += cur; cur *= (1.05 * 0.995); }
+
+      let cpkw = category === 'residential'
+        ? (sysKW <= 3 ? 81000 : sysKW <= 10 ? 72000 : 65000)
+        : (sysKW <= 10 ? 62000 : 55000);
+      if (sysType === 'hybrid') cpkw += 12000;
+      if (sysType === 'offgrid') cpkw += 20000;
+      const sysCost = sysKW * cpkw;
+
+      let subsidy = 0, subLabel = '';
+      if (category === 'residential') {
+        const sk = Math.min(sysKW, 3);
+        subsidy = sk <= 2 ? sk * 30000 : 2 * 30000 + (sk - 2) * 18000;
+        subLabel = sk <= 2 ? `${fmtDec(sk)} kW × ₹30,000` : 'max 3 kW';
+        document.getElementById('subsidy-badge').textContent = subLabel;
+      }
+      const netCost = sysCost - subsidy;
+      const payback = annualSav > 0 ? netCost / annualSav : 0;
+      const roi = netCost > 0 ? (annualSav / netCost) * 100 : 0;
+      const covPct = Math.min(100, (covered / monthlyUnits) * 100);
+
+      const co2_30T = (monthlyGen * 12 * 30 * 0.82) / 1000;
+      const trees = Math.round((co2_30T * 1000) / 625);
+
+      lastCalcData = { sysKW, tariff, monthlySav, annualSav, sav30, sysCost, subsidy, netCost, payback, roi, covPct, co2_30T, trees };
+      render(lastCalcData);
+    }
+
+    function render(d) {
+      document.getElementById('empty-state').style.display = 'none';
+      ['results','kpi-wrap','env-wrap'].forEach(id => {
+        const el = document.getElementById(id);
+        el.classList.add('show');
+      });
+
+      document.getElementById('r-syssize').innerHTML = `${fmtDec(d.sysKW,2)} <span>kW</span>`;
+      document.getElementById('r-tariff-label').textContent = `Electricity Bill Savings (at ₹${parseFloat(d.tariff).toFixed(2)}/kWh)`;
+      document.getElementById('r-monthly').textContent = fmtINR(d.monthlySav);
+      document.getElementById('r-annual').textContent = fmtINR(d.annualSav);
+      document.getElementById('r-30yr').textContent = fmtINR(d.sav30);
+      document.getElementById('r-syscost').textContent = fmtINR(d.sysCost);
+
+      if (category === 'residential' && d.subsidy > 0) {
+        document.getElementById('r-subsidy').textContent = '− ' + fmtINR(d.subsidy);
+        document.getElementById('subsidy-row').style.display = '';
+      } else {
+        document.getElementById('subsidy-row').style.display = 'none';
+      }
+      document.getElementById('r-netcost').textContent = fmtINR(d.netCost);
+      document.getElementById('r-coverage-pct').textContent = Math.round(d.covPct) + '%';
+      document.getElementById('r-payback').textContent = fmtDec(d.payback, 1);
+      document.getElementById('r-roi').textContent = fmtDec(d.roi, 1);
+      document.getElementById('r-co2').textContent = fmtDec(d.co2_30T, 1);
+      document.getElementById('r-trees').textContent = d.trees.toLocaleString('en-IN');
+
+      setTimeout(() => { document.getElementById('gauge-fill').style.width = d.covPct + '%'; }, 100);
+
+      showToast(`✅ ${fmtDec(d.sysKW,2)} kW · saves ${fmtINR(d.annualSav)}/yr · ${fmtDec(d.payback,1)} yr payback`);
+    }
+
+    function connectWhatsAppCalcLead() {
+      const state = document.getElementById('sel-state').value || 'Odisha';
+      const district = document.getElementById('sel-district').value || 'Bhubaneswar';
+      const bill = document.getElementById('monthly-bill').value || '6500';
+
+      let msg = `Hi *Suryon Group*! ☀️\nI used your Solar Calculator.\n- *Category:* ${category}\n- *Location:* ${district}, ${state}\n- *Monthly Bill:* ₹${bill}\n`;
+      if (lastCalcData) {
+        msg += `- *Estimated Capacity:* ~ ${fmtDec(lastCalcData.sysKW, 2)} kW\n- *Annual Savings:* ~ ${fmtINR(lastCalcData.annualSav)}\n- *Net Investment:* ~ ${fmtINR(lastCalcData.netCost)}\n`;
+      }
+      msg += `\nI would like to get a free site assessment & exact solar quote (+91 98274 72441).`;
+
+      openWhatsApp(msg);
+    }
+  </script>
+</body>
+</html>
